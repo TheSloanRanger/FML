@@ -11,13 +11,10 @@ auto.FAILSAFE = True
 auto.PAUSE = 0.001
 # time.sleep(2)
 def random_keyPress():
-    # auto.press(keys[random.randint(0, 69)])
     auto.press(keys[random.randint(0, len(keys) - 1)])
 def FML():
-    y = 0
     while True:
         # time.sleep(0.1)
-    
         x = random.randint(1, 8)
         # x = 7
         if x == 1:
@@ -36,5 +33,4 @@ def FML():
             auto.scroll(random.randint(-10, 10))
         if x == 7:
             auto.press('enter')
-        y = y + 1
 FML()
